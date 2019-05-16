@@ -10,5 +10,5 @@
 ![screenshot_01](https://blogfiles.pstatic.net/MjAxOTA1MTRfMjQ1/MDAxNTU3ODM3MzY2MTA3.w8oeiC3uSIRGUi4qCcZ9K_FeWcHsPU0rNBLtF0gh27cg.yDUfGQB9aytczo9nnV1TtQi1U-odiEQwm228Vs2ECm8g.PNG.gaebhi/mcc.png?type=w1 "screenshot_01")
 
 ## 3. 링크
-* [Video link](https://serviceapi.nmv.naver.com/view/ugcPlayer.nhn?vid=8DA738D4A0385463191D4F3D181E67D1BF1E&inKey=V1282ac2cdb3048e7c2924304ca058cc3ad52e702c448888bf67c08bf60b99526c6734304ca058cc3ad52&hasLink=0 "link")
+* [Video link](https://youtu.be/anj7_jkeMeI "link")
 
