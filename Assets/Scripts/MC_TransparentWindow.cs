@@ -10,7 +10,7 @@ public class MC_TransparentWindow : MonoBehaviour
     #region rect
     public struct RECT
     {
-        public int Left, Top, Right, Bottom;
+        private int Left, Top, Right, Bottom;
 
         public RECT(int left, int top, int right, int bottom)
         {
@@ -122,14 +122,15 @@ public class MC_TransparentWindow : MonoBehaviour
 
     #endregion
 
-    private bool clickThrough = false;
+    private bool clickThrough;
 
     private IntPtr hwnd;
 
     void Start()
     {
-#if !UNITY_EDITOR 
-        var margins = new MARGINS() { cxLeftWidth = -1 };
+        clickThrough = false;
+#if !UNITY_EDITOR
+        var margins = new MARGINS { cxLeftWidth = -1 };
         hwnd = GetActiveWindow();
 
         SetWindowLong(hwnd, GWL_STYLE, WS_POPUP | WS_VISIBLE);
@@ -141,7 +142,9 @@ public class MC_TransparentWindow : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Z))
+        {
             clickThrough = !clickThrough;
+        }
 
         if (clickThrough)
         {

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MC_TableBuilder : MonoBehaviour
 {
-    public static MC_TableBuilder Instance;
-
     //CotinentList
     [HideInInspector]
     public List<string> are = new List<string>();
@@ -27,7 +25,7 @@ public class MC_TableBuilder : MonoBehaviour
     public List<string> greatVoyage = new List<string>();
 
     //map name
-    public string Ar_leon
+    public static string Ar_leon
     {
         get
         {
@@ -35,7 +33,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ar_log
+    public static string Ar_log
     {
         get
         {
@@ -43,7 +41,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ar_ange
+    public static string Ar_ange
     {
         get
         {
@@ -51,7 +49,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ar_guk
+    public static string Ar_guk
     {
         get
         {
@@ -59,7 +57,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Udia_sa
+    public static string Udia_sa
     {
         get
         {
@@ -67,7 +65,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Udia_oz
+    public static string Udia_oz
     {
         get
         {
@@ -75,7 +73,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Lw_guk
+    public static string Lw_guk
     {
         get
         {
@@ -83,7 +81,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Lw_lake
+    public static string Lw_lake
     {
         get
         {
@@ -91,7 +89,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Lw_mad
+    public static string Lw_mad
     {
         get
         {
@@ -99,7 +97,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Lw_bil
+    public static string Lw_bil
     {
         get
         {
@@ -107,7 +105,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Lw_zago
+    public static string Lw_zago
     {
         get
         {
@@ -115,7 +113,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_gal
+    public static string Le_gal
     {
         get
         {
@@ -123,7 +121,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_dio
+    public static string Le_dio
     {
         get
         {
@@ -131,7 +129,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_lia
+    public static string Le_lia
     {
         get
         {
@@ -139,7 +137,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_lu
+    public static string Le_lu
     {
         get
         {
@@ -147,7 +145,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_bae
+    public static string Le_bae
     {
         get
         {
@@ -155,7 +153,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_bo
+    public static string Le_bo
     {
         get
         {
@@ -163,7 +161,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_cro
+    public static string Le_cro
     {
         get
         {
@@ -171,7 +169,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_hae
+    public static string Le_hae
     {
         get
         {
@@ -179,7 +177,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Le_hk
+    public static string Le_hk
     {
         get
         {
@@ -187,7 +185,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_mirror
+    public static string An_mirror
     {
         get
         {
@@ -195,7 +193,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_del
+    public static string An_del
     {
         get
         {
@@ -203,7 +201,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_dung
+    public static string An_dung
     {
         get
         {
@@ -211,7 +209,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_sori
+    public static string An_sori
     {
         get
         {
@@ -219,7 +217,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_hang
+    public static string An_hang
     {
         get
         {
@@ -227,7 +225,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string An_hwang
+    public static string An_hwang
     {
         get
         {
@@ -235,7 +233,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_gal
+    public static string Ard_gal
     {
         get
         {
@@ -243,7 +241,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_ne
+    public static string Ard_ne
     {
         get
         {
@@ -251,7 +249,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_lise
+    public static string Ard_lise
     {
         get
         {
@@ -259,7 +257,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_me
+    public static string Ard_me
     {
         get
         {
@@ -267,7 +265,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_wind
+    public static string Ard_wind
     {
         get
         {
@@ -275,7 +273,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_sh
+    public static string Ard_sh
     {
         get
         {
@@ -283,7 +281,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_to
+    public static string Ard_to
     {
         get
         {
@@ -291,7 +289,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Ard_red
+    public static string Ard_red
     {
         get
         {
@@ -299,7 +297,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_la
+    public static string Bn_la
     {
         get
         {
@@ -307,7 +305,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_val
+    public static string Bn_val
     {
         get
         {
@@ -315,7 +313,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_be
+    public static string Bn_be
     {
         get
         {
@@ -323,7 +321,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_bc
+    public static string Bn_bc
     {
         get
         {
@@ -331,7 +329,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_cro
+    public static string Bn_cro
     {
         get
         {
@@ -339,7 +337,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_par
+    public static string Bn_par
     {
         get
         {
@@ -347,7 +345,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Bn_pes
+    public static string Bn_pes
     {
         get
         {
@@ -355,7 +353,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_li
+    public static string Sh_li
     {
         get
         {
@@ -363,7 +361,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_mu
+    public static string Sh_mu
     {
         get
         {
@@ -371,7 +369,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_su
+    public static string Sh_su
     {
         get
         {
@@ -379,7 +377,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_freeze
+    public static string Sh_freeze
     {
         get
         {
@@ -387,7 +385,7 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_ice
+    public static string Sh_ice
     {
         get
         {
@@ -395,13 +393,23 @@ public class MC_TableBuilder : MonoBehaviour
         }
     }
 
-    public string Sh_kal
+    public static string Sh_kal
     {
         get
         {
             return sh_kal;
         }
     }
+
+    public static MC_TableBuilder Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    private static MC_TableBuilder instance;
 
     //map name
 
@@ -470,7 +478,7 @@ public class MC_TableBuilder : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        instance = this;
 
         //아르테미스
         are.Add("레온하트");
