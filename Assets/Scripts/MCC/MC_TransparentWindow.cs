@@ -142,12 +142,6 @@ public class MC_TransparentWindow : MonoBehaviour
 
     void Update()
     {
-        // If our mouse is overlapping an object
-        //RaycastHit hit = new RaycastHit();
-        //clickThrough = !Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition).origin,
-        //        mainCamera.ScreenPointToRay(Input.mousePosition).direction, out hit, 100,Physics.DefaultRaycastLayers);
-
-
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Z))
             clickThrough = !clickThrough;
 

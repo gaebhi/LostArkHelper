@@ -19,6 +19,7 @@ public class MC_UIRoot : MonoBehaviour
     void Awake ()
     {
         float screenRatio = (float)Screen.currentResolution.width / (float)Screen.currentResolution.height;
+		
 		height = Screen.currentResolution.height;
         height = Mathf.FloorToInt( height / 1.2f);
         width = Mathf.FloorToInt(height * screenRatio);
