@@ -1,5 +1,7 @@
 # [로스트아크 모코코 씨앗 위치 찾기 도우미]
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a287d0be8dfb4ad8866a8d46bc3ebd44)](https://app.codacy.com/app/gaebhi/LostArkHelper?utm_source=github.com&utm_medium=referral&utm_content=gaebhi/LostArkHelper&utm_campaign=Badge_Grade_Dashboard)
+
 ## 1.설명
 * 로스트아크 클라이언트 위에 반투명하게 모코코 씨앗의 위치를 표시한 지도를 띄운다. 
 * 지도를 띄운 윈도우 창을 항상 위로 표시하며, 단축키를 통해 지도 아래 게임에 클릭 가능한 상태를 만든다.
