@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class MC_UIRoot : MonoBehaviour
 {
-    public static int width = 0;
-    public static int height = 0;
+    public static int width;
+    public static int height;
 
-    public UISprite spriteMap = null;
+    public UISprite spriteMap;
 
-    public UIPopupList continentList = null;
-    public UILabel labelContinet = null;
+    public UIPopupList continentList;
+    public UILabel labelContinet;
 
-    public UIPopupList areaList = null;
-    public UILabel labelArea = null;
+    public UIPopupList areaList;
+    public UILabel labelArea;
 
     // Use this for initialization
     void Awake ()
     {
         float screenRatio = (float)Screen.currentResolution.width / (float)Screen.currentResolution.height;
-
-        height = Mathf.FloorToInt( Screen.currentResolution.height / 1.2f);
+		height = Screen.currentResolution.height;
+        height = Mathf.FloorToInt( height / 1.2f);
         width = Mathf.FloorToInt(height * screenRatio);
 
         float spriteRatio = (float)width / (float)height;
@@ -41,44 +41,64 @@ public class MC_UIRoot : MonoBehaviour
             {
                 case "아르테미스":
                     foreach (var item in MC_Define.CotinentList.are)
+					{
                         areaList.AddItem(item);
+					}
                     break;
                 case "유디아":
                     foreach (var item in MC_Define.CotinentList.udia)
-                        areaList.AddItem(item);
+					{
+						areaList.AddItem(item);
+					}
                     break;
                 case "루테란서부":
                     foreach (var item in MC_Define.CotinentList.luteranWest)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
                 case "루테란동부":
                     foreach (var item in MC_Define.CotinentList.luteranEast)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
                 case "애니츠":
                     foreach (var item in MC_Define.CotinentList.anits)
-                        areaList.AddItem(item);
-                    break;
+					{                        
+						areaList.AddItem(item);
+                    }
+					break;
                 case "아르데타인":
                     foreach (var item in MC_Define.CotinentList.arde)
-                        areaList.AddItem(item);
-                    break;
+                    {
+						areaList.AddItem(item);
+                    }
+					break;
                 case "슈샤이어":
                     foreach (var item in MC_Define.CotinentList.sh)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
                 case "베른북부":
                     foreach (var item in MC_Define.CotinentList.bernNorth)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
                 case "대항해":
                     foreach (var item in MC_Define.CotinentList.greatVoyage)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
                 default:
                     foreach (var item in MC_Define.CotinentList.are)
+					{
                         areaList.AddItem(item);
-                    break;
+                    }
+					break;
             }
         }
     }

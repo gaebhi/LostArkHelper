@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class MC_TransparentWindow : MonoBehaviour
 {
-    public Material transparentMaterial;
+	[SerializeField]
+    private Material transparentMaterial;
 
     #region rect
     [StructLayout(LayoutKind.Sequential)]
-    public struct RECT
+    public class RECT
     {
-        public int Left, Top, Right, Bottom;
+        private int Left, Top, Right, Bottom;
 
         public RECT(int left, int top, int right, int bottom)
         {
@@ -87,15 +88,13 @@ public class MC_TransparentWindow : MonoBehaviour
     }
     #endregion
 
-    private struct MARGINS
+    private class MARGINS
     {
         public int cxLeftWidth;
         public int cxRightWidth;
         public int cyTopHeight;
         public int cyBottomHeight;
     }
-
-    //private Camera mainCamera = null;
 
     #region user32dll
     [DllImport("user32.dll")]
@@ -130,14 +129,10 @@ public class MC_TransparentWindow : MonoBehaviour
 
     void Start()
     {
-#if !UNITY_EDITOR   // You really don't want to enable this in the editor..
-        //mainCamera = GetComponent<Camera>();
+#if !UNITY_EDITOR  
 
         var margins = new MARGINS() { cxLeftWidth = -1 };
         hwnd = GetActiveWindow();
-
-        //RECT rect = new RECT();
-        //GetWindowRect(new HandleRef(this, hwnd), out rect);
 
         SetWindowLong(hwnd, GWL_STYLE, WS_POPUP | WS_VISIBLE);
         SetWindowPos(hwnd, HWND_TOPMOST, (Screen.currentResolution.width - MC_UIRoot.width) / 2, (Screen.currentResolution.height - MC_UIRoot.height) / 2, MC_UIRoot.width, MC_UIRoot.height, 32 | 64); //SWP_FRAMECHANGED = 0x0020 (32); //SWP_SHOWWINDOW = 0x0040 (64)

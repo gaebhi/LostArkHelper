@@ -7,67 +7,67 @@ public class MC_Define : MonoBehaviour
     public class MapName
     {
         //아르테미스
-        public const string ar_leon = "ar_leon";
-        public const string ar_log = "ar_log";
-        public const string ar_ange = "ar_ange";
-        public const string ar_guk = "ar_guk";
+        public static readonly string ar_leon = "ar_leon";
+        public static readonly string ar_log = "ar_log";
+        public static readonly string ar_ange = "ar_ange";
+        public static readonly string ar_guk = "ar_guk";
 
         //유디아
-        public const string udia_sa = "udia_sa";
-        public const string udia_oz = "udia_oz";
+        public static readonly string udia_sa = "udia_sa";
+        public static readonly string udia_oz = "udia_oz";
 
         //루테란서부
-        public const string lw_guk = "lw_guk";
-        public const string lw_lake = "lw_lake";
-        public const string lw_mad = "lw_mad";
-        public const string lw_bil = "lw_bil";
-        public const string lw_zago = "lw_zago";
+        public static readonly string lw_guk = "lw_guk";
+        public static readonly string lw_lake = "lw_lake";
+        public static readonly string lw_mad = "lw_mad";
+        public static readonly string lw_bil = "lw_bil";
+        public static readonly string lw_zago = "lw_zago";
 
         //루테란동부
-        public const string le_gal = "le_gal";
-        public const string le_dio = "le_dio";
-        public const string le_lia = "le_lia";
-        public const string le_lu = "le_lu";
-        public const string le_bae = "le_bae";
-        public const string le_bo = "le_bo";
-        public const string le_cro = "le_cro";
-        public const string le_hae = "le_hae";
-        public const string le_hk = "le_hk";
+        public static readonly string le_gal = "le_gal";
+        public static readonly string le_dio = "le_dio";
+        public static readonly string le_lia = "le_lia";
+        public static readonly string le_lu = "le_lu";
+        public static readonly string le_bae = "le_bae";
+        public static readonly string le_bo = "le_bo";
+        public static readonly string le_cro = "le_cro";
+        public static readonly string le_hae = "le_hae";
+        public static readonly string le_hk = "le_hk";
 
         //애니츠
-        public const string an_mirror = "an_mirror";
-        public const string an_del = "an_del";
-        public const string an_dung = "an_dung";
-        public const string an_sori = "an_sori";
-        public const string an_hang = "an_hang";
-        public const string an_hwang = "an_hwang";
+        public static readonly string an_mirror = "an_mirror";
+        public static readonly string an_del = "an_del";
+        public static readonly string an_dung = "an_dung";
+        public static readonly string an_sori = "an_sori";
+        public static readonly string an_hang = "an_hang";
+        public static readonly string an_hwang = "an_hwang";
 
         //아르데타인
-        public const string ard_gal = "ard_gal";
-        public const string ard_ne = "ard_ne";
-        public const string ard_lise = "ard_lse";
-        public const string ard_me = "ard_me";
-        public const string ard_wind = "ard_wind";
-        public const string ard_sh = "ard_sh";
-        public const string ard_to = "ard_to";
-        public const string ard_red = "ard_red";
+        public static readonly string ard_gal = "ard_gal";
+        public static readonly string ard_ne = "ard_ne";
+        public static readonly string ard_lise = "ard_lse";
+        public static readonly string ard_me = "ard_me";
+        public static readonly string ard_wind = "ard_wind";
+        public static readonly string ard_sh = "ard_sh";
+        public static readonly string ard_to = "ard_to";
+        public static readonly string ard_red = "ard_red";
 
         //베른북부
-        public const string bn_la = "bn_la";
-        public const string bn_val = "bn_val";
-        public const string bn_be = "bn_be";
-        public const string bn_bc = "bn_bc";
-        public const string bn_cro = "bn_cro";
-        public const string bn_par = "bn_par";
-        public const string bn_pes = "bn_pes";
+        public static readonly string bn_la = "bn_la";
+        public static readonly string bn_val = "bn_val";
+        public static readonly string bn_be = "bn_be";
+        public static readonly string bn_bc = "bn_bc";
+        public static readonly string bn_cro = "bn_cro";
+        public static readonly string bn_par = "bn_par";
+        public static readonly string bn_pes = "bn_pes";
 
         //슈샤이어
-        public const string sh_li = "sh_li";
-        public const string sh_mu = "sh_mu";
-        public const string sh_su = "sh_su";
-        public const string sh_freeze = "sh_freeze";
-        public const string sh_ice = "sh_ice";
-        public const string sh_kal = "sh_kal";
+        public static readonly string sh_li = "sh_li";
+        public static readonly string sh_mu = "sh_mu";
+        public static readonly string sh_su = "sh_su";
+        public static readonly string sh_freeze = "sh_freeze";
+        public static readonly string sh_ice = "sh_ice";
+        public static readonly string sh_kal = "sh_kal";
     }
 
     public class CotinentList
