@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Entry.unity
-    guid: 32dc9364893becf41887fcab5faa39db
   - enabled: 1
     path: Assets/Mococo.unity
     guid: 2397dc9537c17b9479fbfb9c15d153ca
